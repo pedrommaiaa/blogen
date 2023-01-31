@@ -1,6 +1,9 @@
 main :: IO ()
 main = putStrLn myhtml 
 
+newtype Html = Html String
+newtype Structure = Structure String
+
 myhtml :: String
 myhtml = 
     makeHtml 
